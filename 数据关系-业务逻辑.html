@@ -1,0 +1,981 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>数据关系-业务逻辑</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/数据关系-业务逻辑/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.2.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/数据关系-业务逻辑/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- 项目 (矩形) -->
+      <div id="u3852" class="ax_default box_1" data-label="项目">
+        <div id="u3852_div" class=""></div>
+        <div id="u3852_text" class="text ">
+          <p><span style="text-decoration:none;">项目</span></p>
+        </div>
+      </div>
+
+      <!-- 车辆 (矩形) -->
+      <div id="u3853" class="ax_default box_1" data-label="车辆">
+        <div id="u3853_div" class=""></div>
+        <div id="u3853_text" class="text ">
+          <p><span style="text-decoration:none;">车辆</span></p>
+        </div>
+      </div>
+
+      <!-- 企业 (矩形) -->
+      <div id="u3854" class="ax_default box_1" data-label="企业">
+        <div id="u3854_div" class=""></div>
+        <div id="u3854_text" class="text ">
+          <p><span style="text-decoration:none;">企业</span></p>
+        </div>
+      </div>
+
+      <!-- 车载终端 (矩形) -->
+      <div id="u3855" class="ax_default box_1" data-label="车载终端">
+        <div id="u3855_div" class=""></div>
+        <div id="u3855_text" class="text ">
+          <p><span style="text-decoration:none;">车载终端</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3856" class="ax_default _连接线">
+        <img id="u3856_seg0" class="img " src="images/数据关系-业务逻辑/u3856_seg0.svg" alt="u3856_seg0"/>
+        <img id="u3856_seg1" class="img " src="images/数据关系-业务逻辑/u3856_seg1.svg" alt="u3856_seg1"/>
+        <img id="u3856_seg2" class="img " src="images/数据关系-业务逻辑/u3856_seg2.svg" alt="u3856_seg2"/>
+        <div id="u3856_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3857" class="ax_default label">
+        <div id="u3857_div" class=""></div>
+        <div id="u3857_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3858" class="ax_default label">
+        <div id="u3858_div" class=""></div>
+        <div id="u3858_text" class="text ">
+          <p><span style="text-decoration:none;">0,1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3859" class="ax_default box_1">
+        <img id="u3859_img" class="img " src="images/数据关系-业务逻辑/u3859.svg"/>
+        <div id="u3859_text" class="text ">
+          <p><span style="text-decoration:none;">一辆车配置1个终端设备</span></p><p><span style="text-decoration:none;">一个终端设备可能安装在一台车上或未安装在任何车上</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3860" class="ax_default _连接线">
+        <img id="u3860_seg0" class="img " src="images/数据关系-业务逻辑/u3860_seg0.svg" alt="u3860_seg0"/>
+        <div id="u3860_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3861" class="ax_default label">
+        <div id="u3861_div" class=""></div>
+        <div id="u3861_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3862" class="ax_default label">
+        <div id="u3862_div" class=""></div>
+        <div id="u3862_text" class="text ">
+          <p><span style="text-decoration:none;">n</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3863" class="ax_default box_1">
+        <img id="u3863_img" class="img " src="images/数据关系-业务逻辑/u3863.svg"/>
+        <div id="u3863_text" class="text ">
+          <p><span style="text-decoration:none;">一家企业拥有多辆车</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3864" class="ax_default _连接线">
+        <img id="u3864_seg0" class="img " src="images/数据关系-业务逻辑/u3864_seg0.svg" alt="u3864_seg0"/>
+        <div id="u3864_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3865" class="ax_default box_1">
+        <img id="u3865_img" class="img " src="images/数据关系-业务逻辑/u3865.svg"/>
+        <div id="u3865_text" class="text ">
+          <p><span style="text-decoration:none;">一家企业可创建多个项目</span></p><p><span style="text-decoration:none;">一个项目只属于一家企业</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3866" class="ax_default label">
+        <div id="u3866_div" class=""></div>
+        <div id="u3866_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3867" class="ax_default label">
+        <div id="u3867_div" class=""></div>
+        <div id="u3867_text" class="text ">
+          <p><span style="text-decoration:none;">n</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3868" class="ax_default box_1">
+        <img id="u3868_img" class="img " src="images/数据关系-业务逻辑/u3868.svg"/>
+        <div id="u3868_text" class="text ">
+          <p><span style="text-decoration:none;">一辆车只属于一个项目，一个项目可拥有多辆车</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3869" class="ax_default label">
+        <div id="u3869_div" class=""></div>
+        <div id="u3869_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3870" class="ax_default label">
+        <div id="u3870_div" class=""></div>
+        <div id="u3870_text" class="text ">
+          <p><span style="text-decoration:none;">n</span></p>
+        </div>
+      </div>
+
+      <!-- 工作人员 (矩形) -->
+      <div id="u3871" class="ax_default box_1" data-label="工作人员">
+        <div id="u3871_div" class=""></div>
+        <div id="u3871_text" class="text ">
+          <p><span style="text-decoration:none;">工作人员</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3872" class="ax_default _连接线">
+        <img id="u3872_seg0" class="img " src="images/数据关系-业务逻辑/u3872_seg0.svg" alt="u3872_seg0"/>
+        <div id="u3872_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3873" class="ax_default box_1">
+        <img id="u3873_img" class="img " src="images/数据关系-业务逻辑/u3873.svg"/>
+        <div id="u3873_text" class="text ">
+          <p><span style="text-decoration:none;">一个项目有多个工作人员</span></p><p><span style="text-decoration:none;">一个工作人员只属于一个项目</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3874" class="ax_default label">
+        <div id="u3874_div" class=""></div>
+        <div id="u3874_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3875" class="ax_default label">
+        <div id="u3875_div" class=""></div>
+        <div id="u3875_text" class="text ">
+          <p><span style="text-decoration:none;">n</span></p>
+        </div>
+      </div>
+
+      <!-- 作业任务 (矩形) -->
+      <div id="u3876" class="ax_default box_1" data-label="作业任务">
+        <div id="u3876_div" class=""></div>
+        <div id="u3876_text" class="text ">
+          <p><span style="text-decoration:none;">作业任务</span></p>
+        </div>
+      </div>
+
+      <!-- 车辆路线 (矩形) -->
+      <div id="u3877" class="ax_default box_1" data-label="车辆路线">
+        <div id="u3877_div" class=""></div>
+        <div id="u3877_text" class="text ">
+          <p><span style="text-decoration:none;">车辆作业路线</span></p>
+        </div>
+      </div>
+
+      <!-- 环卫工人网格 (矩形) -->
+      <div id="u3878" class="ax_default box_1" data-label="环卫工人网格">
+        <div id="u3878_div" class=""></div>
+        <div id="u3878_text" class="text ">
+          <p><span style="text-decoration:none;">环卫工人网格</span></p>
+        </div>
+      </div>
+
+      <!-- 电子围栏 (矩形) -->
+      <div id="u3879" class="ax_default box_1" data-label="电子围栏">
+        <div id="u3879_div" class=""></div>
+        <div id="u3879_text" class="text ">
+          <p><span style="text-decoration:none;">电子围栏</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3880" class="ax_default box_1">
+        <img id="u3880_img" class="img " src="images/数据关系-业务逻辑/u3880.svg"/>
+        <div id="u3880_text" class="text ">
+          <p><span style="text-decoration:none;">一辆车可设置0或多个电子围栏</span></p><p><span style="text-decoration:none;">一个电子围栏可绑定0或多辆车</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3881" class="ax_default label">
+        <div id="u3881_div" class=""></div>
+        <div id="u3881_text" class="text ">
+          <p><span style="text-decoration:none;">n</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3882" class="ax_default _连接线">
+        <img id="u3882_seg0" class="img " src="images/数据关系-业务逻辑/u3882_seg0.svg" alt="u3882_seg0"/>
+        <img id="u3882_seg1" class="img " src="images/数据关系-业务逻辑/u3882_seg1.svg" alt="u3882_seg1"/>
+        <div id="u3882_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3883" class="ax_default _连接线">
+        <img id="u3883_seg0" class="img " src="images/数据关系-业务逻辑/u3883_seg0.svg" alt="u3883_seg0"/>
+        <div id="u3883_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3884" class="ax_default label">
+        <div id="u3884_div" class=""></div>
+        <div id="u3884_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3885" class="ax_default label">
+        <div id="u3885_div" class=""></div>
+        <div id="u3885_text" class="text ">
+          <p><span style="text-decoration:none;">0,n</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3886" class="ax_default label">
+        <div id="u3886_div" class=""></div>
+        <div id="u3886_text" class="text ">
+          <p><span style="text-decoration:none;">1,n</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3887" class="ax_default label">
+        <div id="u3887_div" class=""></div>
+        <div id="u3887_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3888" class="ax_default label">
+        <div id="u3888_div" class=""></div>
+        <div id="u3888_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3889" class="ax_default label">
+        <div id="u3889_div" class=""></div>
+        <div id="u3889_text" class="text ">
+          <p><span style="text-decoration:none;">0,n</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3890" class="ax_default box_1">
+        <img id="u3890_img" class="img " src="images/数据关系-业务逻辑/u3890.svg"/>
+        <div id="u3890_text" class="text ">
+          <p><span style="text-decoration:none;">一个排班信息指定0或多个环卫工人</span></p><p><span style="text-decoration:none;">一个排班信息指定0或多辆车/司机/随车员</span></p><p><span style="text-decoration:none;">一个排班信息对应一个环卫任务</span></p><p><span style="text-decoration:none;">一个环卫任务可关联不同日期时间的多个排班信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3891" class="ax_default label">
+        <div id="u3891_div" class=""></div>
+        <div id="u3891_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3892" class="ax_default label">
+        <div id="u3892_div" class=""></div>
+        <div id="u3892_text" class="text ">
+          <p><span style="text-decoration:none;">0,1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3893" class="ax_default box_1">
+        <img id="u3893_img" class="img " src="images/数据关系-业务逻辑/u3893.svg"/>
+        <div id="u3893_text" class="text ">
+          <p><span style="text-decoration:none;">需要车的任务设置1个车辆路线</span></p><p><span style="text-decoration:none;">不需要车的任不需要设置车辆路线</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3894" class="ax_default box_1">
+        <img id="u3894_img" class="img " src="images/数据关系-业务逻辑/u3894.svg"/>
+        <div id="u3894_text" class="text ">
+          <p><span style="text-decoration:none;">不需要车的任务设置1个环卫网络（限制环卫工人的工作范围）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3895" class="ax_default label">
+        <div id="u3895_div" class=""></div>
+        <div id="u3895_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3896" class="ax_default label">
+        <div id="u3896_div" class=""></div>
+        <div id="u3896_text" class="text ">
+          <p><span style="text-decoration:none;">0,1</span></p>
+        </div>
+      </div>
+
+      <!-- 车辆加油记录 (矩形) -->
+      <div id="u3897" class="ax_default box_1" data-label="车辆加油记录">
+        <div id="u3897_div" class=""></div>
+        <div id="u3897_text" class="text ">
+          <p><span style="text-decoration:none;">车辆加油记录</span></p>
+        </div>
+      </div>
+
+      <!-- 耗材领取记录 (矩形) -->
+      <div id="u3898" class="ax_default box_1" data-label="耗材领取记录">
+        <div id="u3898_div" class=""></div>
+        <div id="u3898_text" class="text ">
+          <p><span style="text-decoration:none;">耗材领取记录</span></p>
+        </div>
+      </div>
+
+      <!-- 巡检任务 (矩形) -->
+      <div id="u3899" class="ax_default box_1" data-label="巡检任务">
+        <div id="u3899_div" class=""></div>
+        <div id="u3899_text" class="text ">
+          <p><span style="text-decoration:none;">巡检任务</span></p>
+        </div>
+      </div>
+
+      <!-- 巡检评分 (矩形) -->
+      <div id="u3900" class="ax_default box_1" data-label="巡检评分">
+        <div id="u3900_div" class=""></div>
+        <div id="u3900_text" class="text ">
+          <p><span style="text-decoration:none;">巡检评分</span></p>
+        </div>
+      </div>
+
+      <!-- 作业执行记录 (矩形) -->
+      <div id="u3901" class="ax_default box_1" data-label="作业执行记录">
+        <div id="u3901_div" class=""></div>
+        <div id="u3901_text" class="text ">
+          <p><span style="text-decoration:none;">作业执行记录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3902" class="ax_default box_1">
+        <img id="u3902_img" class="img " src="images/数据关系-业务逻辑/u3902.svg"/>
+        <div id="u3902_text" class="text ">
+          <p><span style="text-decoration:none;">排班信息每被执行一次产生一条作业记录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3903" class="ax_default box_1">
+        <img id="u3903_img" class="img " src="images/数据关系-业务逻辑/u3903.svg"/>
+        <div id="u3903_text" class="text ">
+          <p><span style="text-decoration:none;">每个巡检任务对应一个巡检测评分</span></p><p><span style="text-decoration:none;">未巡检时没有巡检评分</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3904" class="ax_default box_1">
+        <img id="u3904_img" class="img " src="images/数据关系-业务逻辑/u3902.svg"/>
+        <div id="u3904_text" class="text ">
+          <p><span style="text-decoration:none;">一个作业执行记录对应一个巡检任务</span></p>
+        </div>
+      </div>
+
+      <!-- 维修申请 (矩形) -->
+      <div id="u3905" class="ax_default box_1" data-label="维修申请">
+        <div id="u3905_div" class=""></div>
+        <div id="u3905_text" class="text ">
+          <p><span style="text-decoration:none;">维修申请</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3906" class="ax_default label">
+        <div id="u3906_div" class=""></div>
+        <div id="u3906_text" class="text ">
+          <p><span style="text-decoration:none;">数据关系--业务逻辑</span></p>
+        </div>
+      </div>
+
+      <!-- 车辆分组信息 (矩形) -->
+      <div id="u3907" class="ax_default box_1" data-label="车辆分组信息">
+        <div id="u3907_div" class=""></div>
+        <div id="u3907_text" class="text ">
+          <p><span style="text-decoration:none;">车辆分组</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3908" class="ax_default label">
+        <div id="u3908_div" class=""></div>
+        <div id="u3908_text" class="text ">
+          <p><span style="text-decoration:none;">n</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3909" class="ax_default label">
+        <div id="u3909_div" class=""></div>
+        <div id="u3909_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3910" class="ax_default box_1">
+        <img id="u3910_img" class="img " src="images/数据关系-业务逻辑/u3863.svg"/>
+        <div id="u3910_text" class="text ">
+          <p><span style="text-decoration:none;">一辆车属于一个车组</span></p><p><span style="text-decoration:none;">一个车组包含多辆车</span></p>
+        </div>
+      </div>
+
+      <!-- 配件信息 (矩形) -->
+      <div id="u3911" class="ax_default box_1" data-label="配件信息">
+        <div id="u3911_div" class=""></div>
+        <div id="u3911_text" class="text ">
+          <p><span style="text-decoration:none;">配件信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3912" class="ax_default _连接线">
+        <img id="u3912_seg0" class="img " src="images/数据关系-业务逻辑/u3912_seg0.svg" alt="u3912_seg0"/>
+        <div id="u3912_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3913" class="ax_default label">
+        <div id="u3913_div" class=""></div>
+        <div id="u3913_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3914" class="ax_default _连接线">
+        <img id="u3914_seg0" class="img " src="images/数据关系-业务逻辑/u3914_seg0.svg" alt="u3914_seg0"/>
+        <img id="u3914_seg1" class="img " src="images/数据关系-业务逻辑/u3914_seg1.svg" alt="u3914_seg1"/>
+        <img id="u3914_seg2" class="img " src="images/数据关系-业务逻辑/u3914_seg2.svg" alt="u3914_seg2"/>
+        <div id="u3914_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3915" class="ax_default _连接线">
+        <img id="u3915_seg0" class="img " src="images/数据关系-业务逻辑/u3915_seg0.svg" alt="u3915_seg0"/>
+        <img id="u3915_seg1" class="img " src="images/数据关系-业务逻辑/u3915_seg1.svg" alt="u3915_seg1"/>
+        <img id="u3915_seg2" class="img " src="images/数据关系-业务逻辑/u3915_seg2.svg" alt="u3915_seg2"/>
+        <div id="u3915_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- 车辆分组信息 (矩形) -->
+      <div id="u3916" class="ax_default box_1" data-label="车辆分组信息">
+        <div id="u3916_div" class=""></div>
+        <div id="u3916_text" class="text ">
+          <p><span style="text-decoration:none;">车组长</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3917" class="ax_default _连接线">
+        <img id="u3917_seg0" class="img " src="images/数据关系-业务逻辑/u3917_seg0.svg" alt="u3917_seg0"/>
+        <div id="u3917_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3918" class="ax_default label">
+        <div id="u3918_div" class=""></div>
+        <div id="u3918_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3919" class="ax_default box_1">
+        <img id="u3919_img" class="img " src="images/数据关系-业务逻辑/u3863.svg"/>
+        <div id="u3919_text" class="text ">
+          <p><span style="text-decoration:none;">一个车辆分组有一名车组长</span></p>
+        </div>
+      </div>
+
+      <!-- 作业排班 (矩形) -->
+      <div id="u3920" class="ax_default box_1" data-label="作业排班">
+        <div id="u3920_div" class=""></div>
+        <div id="u3920_text" class="text ">
+          <p><span style="text-decoration:none;">作业排班</span></p>
+        </div>
+      </div>
+
+      <!-- 司机 (矩形) -->
+      <div id="u3921" class="ax_default box_1" data-label="司机">
+        <div id="u3921_div" class=""></div>
+        <div id="u3921_text" class="text ">
+          <p><span style="text-decoration:none;">司机</span></p>
+        </div>
+      </div>
+
+      <!-- 司机卡 (矩形) -->
+      <div id="u3922" class="ax_default box_1" data-label="司机卡">
+        <div id="u3922_div" class=""></div>
+        <div id="u3922_text" class="text ">
+          <p><span style="text-decoration:none;">司机卡</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3923" class="ax_default _连接线">
+        <img id="u3923_seg0" class="img " src="images/数据关系-业务逻辑/u3923_seg0.svg" alt="u3923_seg0"/>
+        <div id="u3923_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3924" class="ax_default label">
+        <div id="u3924_div" class=""></div>
+        <div id="u3924_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3925" class="ax_default label">
+        <div id="u3925_div" class=""></div>
+        <div id="u3925_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3926" class="ax_default box_1">
+        <img id="u3926_img" class="img " src="images/数据关系-业务逻辑/u3926.svg"/>
+        <div id="u3926_text" class="text ">
+          <p><span style="text-decoration:none;">一个司机配一张司机卡</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3927" class="ax_default _连接线">
+        <img id="u3927_seg0" class="img " src="images/数据关系-业务逻辑/u3927_seg0.svg" alt="u3927_seg0"/>
+        <div id="u3927_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3928" class="ax_default _连接线">
+        <img id="u3928_seg0" class="img " src="images/数据关系-业务逻辑/u3928_seg0.svg" alt="u3928_seg0"/>
+        <img id="u3928_seg1" class="img " src="images/数据关系-业务逻辑/u3928_seg1.svg" alt="u3928_seg1"/>
+        <img id="u3928_seg2" class="img " src="images/数据关系-业务逻辑/u3928_seg2.svg" alt="u3928_seg2"/>
+        <div id="u3928_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3929" class="ax_default _连接线">
+        <img id="u3929_seg0" class="img " src="images/数据关系-业务逻辑/u3929_seg0.svg" alt="u3929_seg0"/>
+        <div id="u3929_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3930" class="ax_default label">
+        <div id="u3930_div" class=""></div>
+        <div id="u3930_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3931" class="ax_default label">
+        <div id="u3931_div" class=""></div>
+        <div id="u3931_text" class="text ">
+          <p><span style="text-decoration:none;">0,n</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3932" class="ax_default _连接线">
+        <img id="u3932_seg0" class="img " src="images/数据关系-业务逻辑/u3932_seg0.svg" alt="u3932_seg0"/>
+        <div id="u3932_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3933" class="ax_default label">
+        <div id="u3933_div" class=""></div>
+        <div id="u3933_text" class="text ">
+          <p><span style="text-decoration:none;">0,n</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3934" class="ax_default label">
+        <div id="u3934_div" class=""></div>
+        <div id="u3934_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3935" class="ax_default _连接线">
+        <img id="u3935_seg0" class="img " src="images/数据关系-业务逻辑/u3935_seg0.svg" alt="u3935_seg0"/>
+        <div id="u3935_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3936" class="ax_default label">
+        <div id="u3936_div" class=""></div>
+        <div id="u3936_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3937" class="ax_default label">
+        <div id="u3937_div" class=""></div>
+        <div id="u3937_text" class="text ">
+          <p><span style="text-decoration:none;">0,1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3938" class="ax_default _连接线">
+        <img id="u3938_seg0" class="img " src="images/数据关系-业务逻辑/u3938_seg0.svg" alt="u3938_seg0"/>
+        <img id="u3938_seg1" class="img " src="images/数据关系-业务逻辑/u3938_seg1.svg" alt="u3938_seg1"/>
+        <img id="u3938_seg2" class="img " src="images/数据关系-业务逻辑/u3938_seg2.svg" alt="u3938_seg2"/>
+        <div id="u3938_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3939" class="ax_default _连接线">
+        <img id="u3939_seg0" class="img " src="images/数据关系-业务逻辑/u3939_seg0.svg" alt="u3939_seg0"/>
+        <img id="u3939_seg1" class="img " src="images/数据关系-业务逻辑/u3939_seg1.svg" alt="u3939_seg1"/>
+        <img id="u3939_seg2" class="img " src="images/数据关系-业务逻辑/u3939_seg2.svg" alt="u3939_seg2"/>
+        <div id="u3939_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3940" class="ax_default box_1">
+        <img id="u3940_img" class="img " src="images/数据关系-业务逻辑/u3859.svg"/>
+        <div id="u3940_text" class="text ">
+          <p><span style="text-decoration:none;">每次加油记录关联对应的车辆和司机</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3941" class="ax_default label">
+        <div id="u3941_div" class=""></div>
+        <div id="u3941_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3942" class="ax_default label">
+        <div id="u3942_div" class=""></div>
+        <div id="u3942_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3943" class="ax_default label">
+        <div id="u3943_div" class=""></div>
+        <div id="u3943_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3944" class="ax_default label">
+        <div id="u3944_div" class=""></div>
+        <div id="u3944_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- 车辆状态信息 (矩形) -->
+      <div id="u3945" class="ax_default box_1" data-label="车辆状态信息">
+        <div id="u3945_div" class=""></div>
+        <div id="u3945_text" class="text ">
+          <p><span style="text-decoration:none;">车辆状态数据</span></p><p><span style="text-decoration:none;">（GPS,ACC,油量等）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3946" class="ax_default _连接线">
+        <img id="u3946_seg0" class="img " src="images/数据关系-业务逻辑/u3946_seg0.svg" alt="u3946_seg0"/>
+        <img id="u3946_seg1" class="img " src="images/数据关系-业务逻辑/u3946_seg1.svg" alt="u3946_seg1"/>
+        <img id="u3946_seg2" class="img " src="images/数据关系-业务逻辑/u3946_seg2.svg" alt="u3946_seg2"/>
+        <img id="u3946_seg3" class="img " src="images/数据关系-业务逻辑/u3946_seg3.svg" alt="u3946_seg3"/>
+        <div id="u3946_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3947" class="ax_default label">
+        <div id="u3947_div" class=""></div>
+        <div id="u3947_text" class="text ">
+          <p><span style="text-decoration:none;">n</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3948" class="ax_default label">
+        <div id="u3948_div" class=""></div>
+        <div id="u3948_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3949" class="ax_default box_1">
+        <img id="u3949_img" class="img " src="images/信息框架-平台管理/u3685.svg"/>
+        <div id="u3949_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- 环卫工人 (矩形) -->
+      <div id="u3950" class="ax_default box_1" data-label="环卫工人">
+        <div id="u3950_div" class=""></div>
+        <div id="u3950_text" class="text ">
+          <p><span style="text-decoration:none;">环卫工人</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3951" class="ax_default _连接线">
+        <img id="u3951_seg0" class="img " src="images/数据关系-业务逻辑/u3951_seg0.svg" alt="u3951_seg0"/>
+        <img id="u3951_seg1" class="img " src="images/数据关系-业务逻辑/u3951_seg1.svg" alt="u3951_seg1"/>
+        <div id="u3951_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3952" class="ax_default _连接线">
+        <img id="u3952_seg0" class="img " src="images/数据关系-业务逻辑/u3952_seg0.svg" alt="u3952_seg0"/>
+        <div id="u3952_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- 环卫工人 (矩形) -->
+      <div id="u3953" class="ax_default box_1" data-label="环卫工人">
+        <div id="u3953_div" class=""></div>
+        <div id="u3953_text" class="text ">
+          <p><span style="text-decoration:none;">随车员</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3954" class="ax_default _连接线">
+        <img id="u3954_seg0" class="img " src="images/数据关系-业务逻辑/u3954_seg0.svg" alt="u3954_seg0"/>
+        <img id="u3954_seg1" class="img " src="images/数据关系-业务逻辑/u3954_seg1.svg" alt="u3954_seg1"/>
+        <img id="u3954_seg2" class="img " src="images/数据关系-业务逻辑/u3954_seg2.svg" alt="u3954_seg2"/>
+        <img id="u3954_seg3" class="img " src="images/数据关系-业务逻辑/u3954_seg3.svg" alt="u3954_seg3"/>
+        <div id="u3954_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3955" class="ax_default _连接线">
+        <img id="u3955_seg0" class="img " src="images/数据关系-业务逻辑/u3955_seg0.svg" alt="u3955_seg0"/>
+        <img id="u3955_seg1" class="img " src="images/数据关系-业务逻辑/u3955_seg1.svg" alt="u3955_seg1"/>
+        <img id="u3955_seg2" class="img " src="images/数据关系-业务逻辑/u3955_seg2.svg" alt="u3955_seg2"/>
+        <img id="u3955_seg3" class="img " src="images/数据关系-业务逻辑/u3955_seg3.svg" alt="u3955_seg3"/>
+        <div id="u3955_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3956" class="ax_default _连接线">
+        <img id="u3956_seg0" class="img " src="images/数据关系-业务逻辑/u3956_seg0.svg" alt="u3956_seg0"/>
+        <img id="u3956_seg1" class="img " src="images/数据关系-业务逻辑/u3956_seg1.svg" alt="u3956_seg1"/>
+        <div id="u3956_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3957" class="ax_default label">
+        <div id="u3957_div" class=""></div>
+        <div id="u3957_text" class="text ">
+          <p><span style="text-decoration:none;">0,n</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3958" class="ax_default label">
+        <div id="u3958_div" class=""></div>
+        <div id="u3958_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3959" class="ax_default _连接线">
+        <img id="u3959_seg0" class="img " src="images/数据关系-业务逻辑/u3959_seg0.svg" alt="u3959_seg0"/>
+        <div id="u3959_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3960" class="ax_default label">
+        <div id="u3960_div" class=""></div>
+        <div id="u3960_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3961" class="ax_default label">
+        <div id="u3961_div" class=""></div>
+        <div id="u3961_text" class="text ">
+          <p><span style="text-decoration:none;">1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3962" class="ax_default box_1">
+        <img id="u3962_img" class="img " src="images/数据关系-业务逻辑/u3962.svg"/>
+        <div id="u3962_text" class="text ">
+          <p><span style="text-decoration:none;">每个车辆作业记录包含一个实际执行路线</span></p>
+        </div>
+      </div>
+
+      <!-- 车辆路线 (矩形) -->
+      <div id="u3963" class="ax_default box_1" data-label="车辆路线">
+        <div id="u3963_div" class=""></div>
+        <div id="u3963_text" class="text ">
+          <p><span style="text-decoration:none;">车辆排班路线</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接符) -->
+      <div id="u3964" class="ax_default _连接线">
+        <img id="u3964_seg0" class="img " src="images/数据关系-业务逻辑/u3964_seg0.svg" alt="u3964_seg0"/>
+        <div id="u3964_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>
